@@ -5,10 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" type="image/x-icon" href="../icon/favicon.png">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
 	<script src="https://kit.fontawesome.com/deeeacd182.js" crossorigin="anonymous"></script>
-	<title>Reservas CoderBar</title>
+	<title>Galeria CoderBar</title>
 	<meta name=description content="coderbar es un bar de tragos y cerveza artesanal para acompañar nuestras mejores hamburguesas y comidas al mejor precio">
 	<meta name="author" content="coderbar">
 	<meta name="og:title" content="coderbar">
@@ -32,30 +31,79 @@
 		</div>
 		<!-- END REDES SOCIALES -->
 	</header>
-	
 	<section id="section">
-		<div class="formulario">
-			<div class="formulario__reservas">
-				<form action="" method="post" enctype="multipart/form-data" autocomplete="off">
-					<input class="formulario__reservas--posicion formulario__reservas--fontsize"type="text" name="nombre-y-apellido" placeholder="Nombre y Apellido" required="">
-					<input class="formulario__reservas--posicion formulario__reservas--fontsize"type="text" name="documento" placeholder="Documento" required="">
-					<input class="formulario__reservas--posicion formulario__reservas--fontsize"type="number" name="celular" placeholder="Celular" required="">
-					<input class="formulario__reservas--posicion formulario__reservas--fontsize"type="email" name="email" placeholder="E-mail" required="">
-					<input class="formulario__reservas--posicion formulario__reservas--fontsize"type="number" name="personas" placeholder="Cantidad de personas" min="1" max="8" required="">
-					<select class="formulario__reservas--width"name="ambiente">
-						<option value="Ambiente">Elegir ambiente</option>
-						<option value="Patio">Patio</option>
-						<option value="Terraza">Terraza</option>
-						<option value="Interior">Interior</option>
-					</select>
-					<div class="formulario__reservas--center">
-						<p>Soy mayor de 18 años.</p>
-						<input type="checkbox" name="mayor" required="">
+		<div class=" overflow-auto">
+			<!-- SLIDE 1-->
+			<div id="galeria1" class="carousel slide carousel-size carousel-position" data-ride="carousel">
+			  <ol class="carousel-indicators">
+			    <li data-target="#galeria1" data-slide-to="0" class="active"></li>
+			    <li data-target="#galeria1" data-slide-to="1"></li>
+			    <li data-target="#galeria1" data-slide-to="2"></li>
+			  </ol>
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+			    	<img class="carousel-image carousel-size" src="../images/galeria/1280/galeria1.jpg" srcset="../images/galeria/480/galeria1-480.jpg 480w, ../images/galeria/1280/galeria1.jpg" alt="barra">
+					<div class="carousel-caption d-none d-md-block">
+				    	<p class="claro">Ofrecemos excelentes variedades internacionales</p>
+				  	</div>
+				</div>
+			   <div class="carousel-item">
+					<img class="carousel-image carousel-size" src="../images/galeria/1280/galeria2.jpg" srcset="../images/galeria/480/galeria2-480.jpg 480w, ../images/galeria/1280/galeria2.jpg" alt="interior">
+					<div class="carousel-caption d-none d-md-block">
+				    	<p class="semioscuro">Pueden disfrutar del mejor ambiente</p>
 					</div>
-					<input class="formulario__reservas--posicion formulario__reservas--fontsize" type="reset" name="Limpiar formulario">
-					<input class="formulario__reservas--posicion formulario__reservas--fontsize" type="submit" name="reservar" placeholder="reservar">
-					<p class="formulario__reservas--fontsize">Luego de realizar la reserva se confirmará por mail, asegúrese de escribirlo correctamente. Recuerde presentarse con el nombre ingresado al horario indicado. Luego de 20 min la reserva será cancelada, en caso de cambio de horario contáctese en la sección contactos. <br>Muchas gracias!</p>
-				</form>
+				</div>
+			    <div class="carousel-item">
+					<img class="carousel-image carousel-size" src="../images/galeria/1280/galeria3.jpg" srcset="../images/galeria/480/galeria3-480.jpg 480w, ../images/galeria/1280/galeria3.jpg" alt="barra2">
+					<div class="carousel-caption d-none d-md-block">
+				    	<p class="semioscuro">Tenemos happy hour!</p>
+					</div>
+				</div>
+			  </div>
+			  <a class="carousel-control-prev" href="#galeria1" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="carousel-control-next" href="#galeria1" role="button" data-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			</div>
+			<!-- SLIDE 2-->
+			<div id="galeria2" class="carousel slide carousel-size carousel-position" data-ride="carousel">
+			  <ol class="carousel-indicators">
+			    <li data-target="#galeria2" data-slide-to="0" class="active"></li>
+			    <li data-target="#galeria2" data-slide-to="1"></li>
+			    <li data-target="#galeria2" data-slide-to="2"></li>
+			  </ol>
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+				  <img class="carousel-image carousel-size" src="../images/galeria/1280/galeria4.jpg" srcset="../images/galeria/480/galeria4-480.jpg 480w, ../images/galeria/1280/galeria4.jpg" alt="barra3">
+				  <div class="carousel-caption d-none d-md-block">
+				    <p class="semioscuro">Ofrecemos un gran ambiente nocturno</p>
+				  </div>
+				</div>
+			   <div class="carousel-item">
+				  <img class="carousel-image carousel-size" src="../images/galeria/1280/galeria5.jpg" srcset="../images/galeria/480/galeria5-480.jpg 480w, ../images/galeria/1280/galeria5.jpg" alt="patio trasero">
+				  <div class="carousel-caption d-none d-md-block">
+				    <p class="claro">Podés disfrutar de nuestro patio trasero</p>
+				  </div>
+				</div>
+			    <div class="carousel-item">
+				  <img class="carousel-image carousel-size" src="../images/galeria/1280/galeria6.jpg" srcset="../images/galeria/480/galeria6-480.jpg 480w, ../images/galeria/1280/galeria6.jpg" alt="patio delantero">
+				  <div class="carousel-caption d-none d-md-block">
+				    <p class="claro">O nuestro exterior delantero</p>
+				  </div>
+				</div>
+			  </div>
+			  <a class="carousel-control-prev" href="#galeria2" role="button" data-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="carousel-control-next" href="#galeria2" role="button" data-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
 			</div>
 		</div>
 	</section>
