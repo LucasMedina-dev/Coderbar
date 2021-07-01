@@ -35,5 +35,9 @@ logs
 
 # mis carpetas
 node_modules/
+package-lock.json/
+package.json/
+coso.bat/
+.gitignore/
 
 
