@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="../icon/favicon.png">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+	<script src="https://kit.fontawesome.com/deeeacd182.js" crossorigin="anonymous"></script>
+	<title>Reservas CoderBar</title>
+	<meta name=description content="coderbar es un bar de tragos y cerveza artesanal para acompañar nuestras mejores hamburguesas y comidas al mejor precio">
+	<meta name="author" content="coderbar">
+	<meta name="og:title" content="coderbar">
+	<meta name="og:site_name" content="coderbar">
+	<meta name="og:description" content="coderbar es un bar de tragos y cerveza artesanal para acompañar nuestras mejores hamburguesas y comidas al mejor precio">
+	<meta name="keywords" content="bar, restaurant, barato, cerveza, trago, patio, terraza, promociones">
+</head>
+<body id="cuerpo">
+	<header class="header">
+		<!-- TITULO -->
+		<div class="header__titulo">
+			<a href="../index.html" class="header__titulo--nodecoration"><p class="header__titulo--decoration">coderbar</p></a>
+		</div>
+		<!-- END TITULO -->
+		<!-- REDES SOCIALES -->
+		<div class="header__redes">
+			<img class="header__redes--seguinos"src="../icon/redes5.svg" alt="seguinos">
+		   	 	<span><a href="https://instagram.com" target="_blank"><img class="header__redes--instagram" src="../icon/ig.svg" alt="instagram"></a></span>
+		   	 	<span><a href="https://web.whatsapp.com" target="_blank"><img class="header__redes--whatsapp" src="../icon/wp.svg" alt="whatsapp"></a></span>
+		   		<span><a href="https://facebook.com" target="_blank"><img class="header__redes--facebook" src="../icon/fb.svg" alt="facebook"></a></span>
+		</div>
+		<!-- END REDES SOCIALES -->
+	</header>
+	
+	<section id="section">
+		<div class="formulario">
+			<div class="formulario__reservas">
+				<form action="" method="post" enctype="multipart/form-data" autocomplete="off">
+					<input class="formulario__reservas--posicion formulario__reservas--fontsize"type="text" name="nombre-y-apellido" placeholder="Nombre y Apellido" required="">
+					<input class="formulario__reservas--posicion formulario__reservas--fontsize"type="text" name="documento" placeholder="Documento" required="">
+					<input class="formulario__reservas--posicion formulario__reservas--fontsize"type="number" name="celular" placeholder="Celular" required="">
+					<input class="formulario__reservas--posicion formulario__reservas--fontsize"type="email" name="email" placeholder="E-mail" required="">
+					<input class="formulario__reservas--posicion formulario__reservas--fontsize"type="number" name="personas" placeholder="Cantidad de personas" min="1" max="8" required="">
+					<select class="formulario__reservas--width"name="ambiente">
+						<option value="Ambiente">Elegir ambiente</option>
+						<option value="Patio">Patio</option>
+						<option value="Terraza">Terraza</option>
+						<option value="Interior">Interior</option>
+					</select>
+					<div class="formulario__reservas--center">
+						<p>Soy mayor de 18 años.</p>
+						<input type="checkbox" name="mayor" required="">
+					</div>
+					<input class="formulario__reservas--posicion formulario__reservas--fontsize" type="reset" name="Limpiar formulario">
+					<input class="formulario__reservas--posicion formulario__reservas--fontsize" type="submit" name="reservar" placeholder="reservar">
+					<p class="formulario__reservas--fontsize">Luego de realizar la reserva se confirmará por mail, asegúrese de escribirlo correctamente. Recuerde presentarse con el nombre ingresado al horario indicado. Luego de 20 min la reserva será cancelada, en caso de cambio de horario contáctese en la sección contactos. <br>Muchas gracias!</p>
+				</form>
+			</div>
+		</div>
+	</section>
+	<footer id="footer">
+		<!-- INICIO NAVEGACION -->
+		<nav class="d-none d-md-block">
+			<div class="navegacion">
+				<ul class="navegacion__ul--center">
+				  	<li class="navegacion__li--transition"><a class="navegacion__link--decoration"href="../pages/reservas.html">Reservas</a></li>
+				  	<span class="navegacion__separadores"></span>
+				  	<li class="navegacion__li--transition"><a class="navegacion__link--decoration"href="../pages/menu.html">Menú</a></li>
+				  	<span class="navegacion__separadores"></span>
+				    <li class="navegacion__li--transition"><a class="navegacion__link--decoration"href="../pages/eventos.html">Eventos</a></li>
+				    <span class="navegacion__separadores"></span>
+				    <li class="navegacion__li--transition"><a class="navegacion__link--decoration"href="../pages/galeria.html">Galería</a></li>
+				    <span class="navegacion__separadores"></span>
+				    <li class="navegacion__li--transition"><a class="navegacion__link--decoration"href="../pages/contacto.html">Contacto</a></li>
+				</ul>
+			</div>	
+		</nav>
+		<!-- END NAVEGACION -->
+		<nav class="navbar-light d-sm-block d-md-none p-1 text-center gradiente-inversa">
+		  <button class="navbar-toggler m-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNav">
+		    <ul class="navbar-nav">
+		      <li class="nav-item">
+		        <a class="nav-link nav-decoration" href="../pages/reservas.html">Reservas</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link nav-decoration" href="../pages/menu.html">Menú</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link nav-decoration" href="../pages/eventos.html">Eventos</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link nav-decoration" href="../pages/galeria.html">Galería</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link nav-decoration" href="../pages/contacto.html">Contacto</a>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>

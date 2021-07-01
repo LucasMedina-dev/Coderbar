@@ -1,0 +1,113 @@
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+	list-style-type: none;
+	font-family: $fuente-secundaria;
+	font-weight:$fuente-light;
+}
+
+/* Cuerpo de pagina*/
+
+#cuerpo{
+	overflow:hidden;
+	display:flex;
+	flex-direction:column;
+	height: 100vh;
+	width:100%;
+	background-image: url(../images/index/repeat.jpg);
+	background-size: contain;
+	background-repeat: repeat;
+}
+
+@for $i from 1 to 5{
+	.boton-#{$i}{
+		align-self: center;
+		position:absolute;
+		@media all and (max-width: 576px){
+			display:none;
+		}
+		.boton__icon-decoration{
+			font-size: 3rem;
+			color: $boton;
+			text-shadow: 2px 3px 5px #000;
+			&:hover{
+				color: $boton-hover;
+			}
+		}
+	}
+}
+@each $formulario in contacto, reservas{
+	.formulario__#{$formulario}{
+		background-color: $background-forms;
+		width: 350px;
+		padding: 5px;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		overflow: auto;
+		border-top: 2px solid black;
+		border-bottom: 2px solid black;
+		box-shadow: 20px 35px 50px #000;
+		@media all and (max-width: 768px){
+			max-height: 70vh;
+		}
+	}
+}
+@each $recuadrosize in promociones, horarios{
+	.#{$recuadrosize}{
+		margin: auto;
+		height:calc(100vh - 100px);
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+	}
+}
+@each $recuadrodecoration in horarios, promociones{
+	.#{$recuadrodecoration}__informacion{
+		width:320px;
+		height:400px;
+		background-color:$background-forms;
+		border-top:2px solid black;
+		border-radius:10px;
+		border-bottom:2px solid black;
+	}
+}
+@each $redes in instagram, facebook, whatsapp{
+	.header__redes--#{$redes}{
+		width:50px;
+		&:hover{
+			transform: scale(1.1);
+		}
+	}
+}
+$fontsize:(parrafo:0.8rem, contacto:0.7rem, reservas:0.7rem);
+@each $informacion, $cuadro in $fontsize{
+	.formulario__#{$informacion}--fontsize{
+		font-size: #{$cuadro};
+	}
+
+}
+$redes:(instagram:ig, whatsapp:wp, facebook:fb);
+@each $red, $area in $redes{
+	.header__redes--#{$red}{
+		grid-area: $area;
+	}
+}
+$slide:(claro:white, oscuro:black, semioscuro:darkgrey);
+@each $brillo, $colorFuente in $slide{
+	.#{$brillo}{
+		color:#{$colorFuente};
+		text-shadow:1px 1px 2px black; 
+	}
+}
+
+$banner:(naranja:rgb(234,99,72), amarillo:rgb(255,204,0), azul:rgb(112,161,214));
+@each $color, $rgb in $banner{
+	.cartas__banner--#{$color}{
+		background-color: #{$rgb};
+	}
+}

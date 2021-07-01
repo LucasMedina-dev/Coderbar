@@ -1,0 +1,63 @@
+.header{
+	align-self:start;
+	max-height: 50px;
+	width: 100%;
+	background: linear-gradient(to bottom, rgb(65,29,15), rgb(75,54,33));
+	display:flex;
+	justify-content:center;
+	flex-direction:row;
+	.header__titulo{
+		display: flex;
+		justify-content:center;
+		align-self: center;
+		text-shadow: black 3px 4px;
+	}
+	.header__titulo--nodecoration{
+		text-decoration: none;
+	}
+	.header__titulo--decoration{
+		margin:0;
+		color: $titulo;
+		font-family: $fuente-primaria;
+		font-weight: $fuente-bold;
+		font-size: 2.8rem;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		animation-name: titulo;
+		animation-duration: 0.3s;
+		@keyframes titulo{
+			0%{
+				transform: rotatey(90deg);
+			}
+		}
+	}
+	.header__redes{
+		position:absolute;
+		right: 0;
+		display: grid;
+		grid-template-areas:
+		"seguinos ig wp fb";
+		grid-template-columns: 150px repeat(3,50px);
+		grid-template-rows: 50px;
+		.header__redes--seguinos{
+			grid-area: seguinos;
+			width:150px;
+			@media all and (max-width:768px){
+				display:none;
+			}
+		}
+		.header__redes--transform{
+			transition: transform 0.2s ease-in-out;
+		}
+		.header__titulo--ulsize{
+			height: 50px;
+			width: 150px;
+		}
+		@media all and (max-width: 768px){
+			grid-template-columns: repeat(3,50px);
+		}
+		@media all and (max-width: 576px){
+			display: none;
+		}
+	}
+}
