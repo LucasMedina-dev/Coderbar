@@ -254,9 +254,7 @@
         font-size: 0.7rem; } }
 
 #footer {
-  width: 100%;
-  position: absolute;
-  bottom: 0; }
+  width: 100%; }
 
 .navegacion {
   background: linear-gradient(to bottom, #411d0f, #4b3621);
