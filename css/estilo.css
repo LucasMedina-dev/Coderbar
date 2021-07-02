@@ -254,6 +254,7 @@
         font-size: 0.7rem; } }
 
 #footer {
+  align-self: flex-end;
   width: 100%; }
 
 .navegacion {
