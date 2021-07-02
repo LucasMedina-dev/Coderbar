@@ -256,8 +256,7 @@
 #footer {
   width: 100%;
   position: absolute;
-  bottom: 0;
-  margin-bottom: -50px; }
+  bottom: 50px; }
 
 .navegacion {
   background: linear-gradient(to bottom, #411d0f, #4b3621);
