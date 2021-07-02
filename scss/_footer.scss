@@ -1,5 +1,6 @@
 #footer{
 	width:100%;
+	margin-bottom: 50px;
 }
 .navegacion{
 	background: linear-gradient(to bottom, rgb(65,29,15), rgb(75,54,33));
@@ -12,7 +13,6 @@
 		justify-content: center;
 		flex-wrap: wrap;
 		width: 100%;
-		bottom: 0;
 	}
 	.navegacion__li--transition{
 		padding: 0 10px;
