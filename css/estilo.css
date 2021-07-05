@@ -196,18 +196,17 @@
     text-align: center; }
   .formulario .formulario__contacto--width {
     width: 100%; }
-  .formulario .formulario__reservas {
-    height: 450px; }
   .formulario .formulario__reservas--posicion {
     padding: 10px;
     width: 100%; }
   .formulario .formulario__reservas--fontsize {
-    text-align: center; }
+    text-align: center;
+    margin: 0; }
   .formulario .formulario__reservas--center {
     text-align: center; }
     .formulario .formulario__reservas--center p {
-      margin-bottom: 0px;
-      font-size: 0.7rem; }
+      font-size: 0.7rem;
+      margin: 0; }
   .formulario .formulario__reservas--width {
     width: 100%; }
 
