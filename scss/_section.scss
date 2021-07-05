@@ -73,7 +73,7 @@
 		max-width:400px;
 		min-width:320px;
 	}
-	.historia__titulo{
+	.historia__contenedor--titulo{
 		font-size:2rem;
 		text-align:center;
 		color:white;
@@ -81,19 +81,24 @@
 			font-size:1rem;
 		}
 	}
-	.historia__separador{
+	.historia__contenedor--separador{
 		margin: auto;
 		width:80%;
 		height:2px;
 		background-color:black;
 		margin-bottom: 5px;
 	}
-	.historia__parrafo{
+	.historia__contenedor--parrafo{
 		color:white;
 		align-self:center;
 		font-size:0.8rem;
 		@media all and (max-width: 576px){
 			font-size:0.8rem;
+		}
+	}
+	.historia__contenedor--horarios{
+		@media all and (max-width: 576px){
+			display: none;
 		}
 	}
 }
@@ -161,6 +166,7 @@
 	}
 	.formulario__contacto--fontsize{
 		text-align: center;
+		margin:0;
 	}
 	.formulario__contacto--width{
 		width:100%;

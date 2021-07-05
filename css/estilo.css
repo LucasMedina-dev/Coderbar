@@ -121,26 +121,29 @@
     flex-wrap: wrap;
     max-width: 400px;
     min-width: 320px; }
-  .historia .historia__titulo {
+  .historia .historia__contenedor--titulo {
     font-size: 2rem;
     text-align: center;
     color: white; }
     @media all and (max-width: 576px) {
-      .historia .historia__titulo {
+      .historia .historia__contenedor--titulo {
         font-size: 1rem; } }
-  .historia .historia__separador {
+  .historia .historia__contenedor--separador {
     margin: auto;
     width: 80%;
     height: 2px;
     background-color: black;
     margin-bottom: 5px; }
-  .historia .historia__parrafo {
+  .historia .historia__contenedor--parrafo {
     color: white;
     align-self: center;
     font-size: 0.8rem; }
     @media all and (max-width: 576px) {
-      .historia .historia__parrafo {
+      .historia .historia__contenedor--parrafo {
         font-size: 0.8rem; } }
+  @media all and (max-width: 576px) {
+    .historia .historia__contenedor--horarios {
+      display: none; } }
 
 .boton-1 {
   bottom: 0; }
@@ -193,7 +196,8 @@
   .formulario .formulario__parrafo--fontsize {
     text-align: center; }
   .formulario .formulario__contacto--fontsize {
-    text-align: center; }
+    text-align: center;
+    margin: 0; }
   .formulario .formulario__contacto--width {
     width: 100%; }
   .formulario .formulario__reservas--posicion {
