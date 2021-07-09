@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap");
 .header {
   align-self: start;
   height: 50px;
@@ -226,20 +227,25 @@
   margin: 50px auto;
   font-weight: bold; }
 
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%; }
+
 .cartas {
-  height: calc(100vh - 100px);
+  margin: auto;
   display: flex;
   flex-direction: column;
   width: 100%;
   justify-content: center; }
   .cartas .cartas__banner {
     width: 100%;
-    height: 50px;
+    max-height: 50px;
     color: white;
-    transition: height 0.8s ease-in-out;
+    transition: max-height 0.5s ease-in-out;
     transition-delay: 0.3s; }
     .cartas .cartas__banner:hover {
-      height: 300px; }
+      max-height: 400px; }
   .cartas .cartas__banner--icono {
     margin-left: 0;
     height: 50px;
@@ -247,12 +253,27 @@
   .cartas .cartas__banner--hidden {
     overflow: hidden; }
   .cartas .cartas__contenido {
-    display: grid; }
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "producto producto"; }
     @media all and (max-width: 768px) {
       .cartas .cartas__contenido p {
         font-size: 0.8rem; }
       .cartas .cartas__contenido li {
         font-size: 0.7rem; } }
+    .cartas .cartas__contenido li {
+      font-family: "Cabin Sketch", cursive;
+      font-weight: 700;
+      letter-spacing: 0.2rem;
+      color: black;
+      font-size: 0.7rem; }
+    .cartas .cartas__contenido p {
+      width: 100%;
+      font-size: 0.6rem;
+      font-weight: 400;
+      letter-spacing: 0rem; }
+  .cartas .cartas__contenido--producto {
+    grid-area: "producto"; }
 
 #footer {
   position: sticky;
