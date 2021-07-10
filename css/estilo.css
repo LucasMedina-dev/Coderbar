@@ -57,6 +57,7 @@
       .header .header__redes {
         display: none; } }
 
+/*Formato del section*/
 #section {
   align-self: center;
   position: relative;
@@ -70,7 +71,7 @@
     #section {
       overflow: auto; } }
 
-/*Imagenes (galeria, eventos y menu)*/
+/*Imagenes - Eventos*/
 .imagenes {
   position: relative;
   width: 100%;
@@ -103,7 +104,7 @@
   0% {
     transform: translate(2px, 20%); } }
 
-/*Nuestra historia*/
+/*Presentacion Index*/
 .historia {
   align-self: center;
   position: relative;
@@ -178,7 +179,7 @@
 .horarios .horarios__informacion--margin {
   margin: 15px 0 0 0; }
 
-/* Formularios */
+/* Formulario - Contacto y Reservas */
 .formulario {
   position: relative;
   width: 100%;
@@ -222,6 +223,7 @@
       transform: scale(0.9);
       width: 100%; } }
 
+/*Slide de imagenes - Galeria*/
 .carousel-position {
   align-self: center;
   margin: 50px auto;
@@ -232,6 +234,7 @@
   height: 10px;
   border-radius: 100%; }
 
+/*Carta de comidas - Menú*/
 .cartas {
   margin: auto;
   display: flex;
@@ -275,11 +278,13 @@
   .cartas .cartas__contenido--producto {
     grid-area: "producto"; }
 
+/*Formato del footer*/
 #footer {
   position: sticky;
   bottom: 0;
   width: 100%; }
 
+/*Nav Web*/
 .navegacion {
   background: linear-gradient(to bottom, #411d0f, #4b3621);
   width: 100%;
