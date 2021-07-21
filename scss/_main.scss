@@ -11,17 +11,6 @@
 
 /* Cuerpo de pagina*/
 
-#cuerpo{
-	overflow:visible;
-	display:flex;
-	flex-direction:column;
-	height: 100vh;
-	width:100%;
-	background-image: url(../images/index/repeat.jpg);
-	background-size: contain;
-	background-repeat: repeat;
-}
-
 @for $i from 1 to 5{
 	.boton-#{$i}{
 		align-self: center;

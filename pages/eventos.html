@@ -31,13 +31,56 @@
 	</header>
 	<section id="section">
 		<!--IMAGENES FLOTANTES-->
-		<div class="imagenes">
-			<div class="imagenes__img--flex">
-				<img class="imagenes__img--posicion" src="../images/eventos/disco.jpg" alt="disco night">
-				<img class="imagenes__img--posicion" src="../images/eventos/halloween.jpg" alt="halloween night">
-				<img class="imagenes__img--posicion" src="../images/eventos/karaoke.jpg" alt="karaoke night">
-			</div>
+	<div class="container-fluid m-auto">
+		<!--PRIMER EVENTO-->
+		<button type="button" class="boton" data-toggle="modal" data-target="#disco">
+			<img class="eventos" src="../images/eventos/disco.jpg" alt="disco">
+		</button>
+		<div class="modal fade" id="disco">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+		      		<div class="modal-body">
+		        		<img src="../images/eventos/ticket.png" width="100%">
+		        		<p class="texto">GOLDEN TICKET</p>
+		        		<span class="coder">C<br>O<br>D<br>E<br>R</span>
+		        		<p class="datos">Disco stu!<br>Fecha: 1/08/21 a las 21h<br>Premio al mejor <br><strong>Freddie Mercury</strong><br>Para el ganador <strong>BIRRA LIBRE</strong></p>
+		    		</div>
+		    	</div>
+		    </div>
 		</div>
+		<!--SEGUNDO EVENTO-->
+		<button type="button" class="boton" data-toggle="modal" data-target="#halloween">
+			<img class="eventos" src="../images/eventos/halloween.jpg" alt="disco">
+		</button>
+		<div class="modal fade" id="halloween">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+		      		<div class="modal-body">
+		        		<img src="../images/eventos/ticket.png" width="100%">
+		        		<p class="texto">GOLDEN TICKET</p>
+		        		<span class="coder">C<br>O<br>D<br>E<br>R</span>
+		        		<p class="datos">Halloween Night!<br>Fecha: 27/07/21 a las 21h<br>Para los disfrazados!<br>Happy hour <strong>all the night!</strong></p>
+		    		</div>
+		    	</div>
+		    </div>
+		</div>
+		<!--TERCER EVENTO-->
+		<button type="button" class="boton" data-toggle="modal" data-target="#karaoke">
+			<img class="eventos" src="../images/eventos/karaoke.jpg" alt="disco">
+		</button>
+		<div class="modal fade" id="karaoke">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+		      		<div class="modal-body">
+		        		<img src="../images/eventos/ticket.png" width="100%">
+		        		<p class="texto">GOLDEN TICKET</p>
+		        		<span class="coder">C<br>O<br>D<br>E<br>R</span>
+		        		<p class="datos">Karaoke!<br>Fecha: 17/08/21 a las 21h<br>Cantá, ganá y llevateee <br>*tambores*<br>Botellón con 4 cargas <strong>FREE</strong></p>
+		    		</div>
+		    	</div>
+		    </div>
+		</div>
+	</div>
 	</section>
 	<footer id="footer">
 		<!-- INICIO NAVEGACION -->
