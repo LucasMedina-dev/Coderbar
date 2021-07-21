@@ -33,13 +33,10 @@
 		background-color: $background-forms;
 		width: 350px;
 		padding: 5px;
-		display: flex;
-		justify-content: center;
-		align-content: center;
-		overflow: auto;
 		border-top: 2px solid black;
 		border-bottom: 2px solid black;
 		box-shadow: 20px 35px 50px #000;
+		margin: auto;
 		@media all and (max-width: 768px){
 			max-height: 70vh;
 		}

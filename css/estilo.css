@@ -67,13 +67,10 @@
   background-color: rgba(168, 112, 63, 0.8);
   width: 350px;
   padding: 5px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  overflow: auto;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
-  box-shadow: 20px 35px 50px #000; }
+  box-shadow: 20px 35px 50px #000;
+  margin: auto; }
   @media all and (max-width: 768px) {
     .formulario__contacto {
       max-height: 70vh; } }
@@ -82,13 +79,10 @@
   background-color: rgba(168, 112, 63, 0.8);
   width: 350px;
   padding: 5px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  overflow: auto;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
-  box-shadow: 20px 35px 50px #000; }
+  box-shadow: 20px 35px 50px #000;
+  margin: auto; }
   @media all and (max-width: 768px) {
     .formulario__reservas {
       max-height: 70vh; } }
@@ -444,6 +438,7 @@ button:focus {
     grid-area: "producto"; }
 
 .header {
+  position: relative;
   align-self: start;
   height: 50px;
   width: 100%;
