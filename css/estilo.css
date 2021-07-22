@@ -11,58 +11,6 @@
   font-weight: 400; }
 
 /* Cuerpo de pagina*/
-.boton-1 {
-  align-self: center;
-  position: absolute; }
-  @media all and (max-width: 576px) {
-    .boton-1 {
-      display: none; } }
-  .boton-1 .boton__icon-decoration {
-    font-size: 3rem;
-    color: rgba(180, 164, 159, 0.8);
-    text-shadow: 2px 3px 5px #000; }
-    .boton-1 .boton__icon-decoration:hover {
-      color: rgba(196, 196, 196, 0.8); }
-
-.boton-2 {
-  align-self: center;
-  position: absolute; }
-  @media all and (max-width: 576px) {
-    .boton-2 {
-      display: none; } }
-  .boton-2 .boton__icon-decoration {
-    font-size: 3rem;
-    color: rgba(180, 164, 159, 0.8);
-    text-shadow: 2px 3px 5px #000; }
-    .boton-2 .boton__icon-decoration:hover {
-      color: rgba(196, 196, 196, 0.8); }
-
-.boton-3 {
-  align-self: center;
-  position: absolute; }
-  @media all and (max-width: 576px) {
-    .boton-3 {
-      display: none; } }
-  .boton-3 .boton__icon-decoration {
-    font-size: 3rem;
-    color: rgba(180, 164, 159, 0.8);
-    text-shadow: 2px 3px 5px #000; }
-    .boton-3 .boton__icon-decoration:hover {
-      color: rgba(196, 196, 196, 0.8); }
-
-.boton-4 {
-  align-self: center;
-  position: absolute; }
-  @media all and (max-width: 576px) {
-    .boton-4 {
-      display: none; } }
-  .boton-4 .boton__icon-decoration {
-    font-size: 3rem;
-    color: rgba(180, 164, 159, 0.8);
-    text-shadow: 2px 3px 5px #000; }
-    .boton-4 .boton__icon-decoration:hover {
-      color: rgba(196, 196, 196, 0.8); }
-
 .formulario__contacto {
   background-color: rgba(168, 112, 63, 0.8);
   width: 350px;
@@ -71,9 +19,6 @@
   border-bottom: 2px solid black;
   box-shadow: 20px 35px 50px #000;
   margin: auto; }
-  @media all and (max-width: 768px) {
-    .formulario__contacto {
-      max-height: 70vh; } }
 
 .formulario__reservas {
   background-color: rgba(168, 112, 63, 0.8);
@@ -83,9 +28,6 @@
   border-bottom: 2px solid black;
   box-shadow: 20px 35px 50px #000;
   margin: auto; }
-  @media all and (max-width: 768px) {
-    .formulario__reservas {
-      max-height: 70vh; } }
 
 .promociones {
   margin: auto;
@@ -180,12 +122,9 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow-y: auto;
   text-align: center;
   height: calc(100vh - 100px); }
-  @media all and (max-width: 576px) {
-    #section {
-      overflow: auto; } }
 
 #cuerpo {
   overflow: visible;
@@ -237,21 +176,6 @@
     @media all and (max-width: 576px) {
       .historia .historia__contenedor--parrafo {
         font-size: 0.8rem; } }
-  @media all and (max-width: 576px) {
-    .historia .historia__contenedor--horarios {
-      display: none; } }
-
-.boton-1 {
-  bottom: 0; }
-
-.boton-2 {
-  top: calc(100vh - 100px); }
-
-.boton-3 {
-  bottom: calc(-100vh + 100px); }
-
-.boton-4 {
-  top: calc(200vh - 200px); }
 
 .promociones .promociones__informacion--tamaño {
   width: 320px; }
@@ -539,3 +463,6 @@ button:focus {
 .gradiente-inversa {
   background: linear-gradient(to bottom, #4b3621, #411d0f);
   min-height: 50px; }
+
+.nav-decoration {
+  color: rgba(0, 0, 0, 0.8) !important; }

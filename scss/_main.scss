@@ -11,23 +11,6 @@
 
 /* Cuerpo de pagina*/
 
-@for $i from 1 to 5{
-	.boton-#{$i}{
-		align-self: center;
-		position:absolute;
-		@media all and (max-width: 576px){
-			display:none;
-		}
-		.boton__icon-decoration{
-			font-size: 3rem;
-			color: $boton;
-			text-shadow: 2px 3px 5px #000;
-			&:hover{
-				color: $boton-hover;
-			}
-		}
-	}
-}
 @each $formulario in contacto, reservas{
 	.formulario__#{$formulario}{
 		background-color: $background-forms;
@@ -37,9 +20,7 @@
 		border-bottom: 2px solid black;
 		box-shadow: 20px 35px 50px #000;
 		margin: auto;
-		@media all and (max-width: 768px){
-			max-height: 70vh;
-		}
+		
 	}
 }
 @each $recuadrosize in promociones, horarios{
