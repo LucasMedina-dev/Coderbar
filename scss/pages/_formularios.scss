@@ -1,0 +1,60 @@
+#reservas{
+	background-image:url(../images/reservas/reservas.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+
+}
+#contacto{
+	background-image:url(../images/contacto/contacto.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+
+/* Formulario - Contacto y Reservas */
+.formulario{
+	position: relative;
+	width: 100%;
+	height:calc(100vh - 100px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow:auto;
+	.formulario__contacto{
+		.formulario__contacto--posicion{
+			padding: 10px;
+			width: 100%;
+		}
+		.formulario__contacto--textarea{
+			width:100%;
+			height:70px;
+			resize: none;
+		}
+		.formulario__contacto--fontsize{
+			text-align: center;
+			margin:0;
+		}
+		.formulario__contacto--width{
+			width:100%;
+		}
+	}
+	.formulario__reservas{
+		.formulario__reservas--posicion{
+			padding: 10px;
+			width: 100%;
+		}
+		.formulario__reservas--fontsize{
+			text-align: center;
+			margin:0;
+		}
+		.formulario__reservas--center{
+			text-align: center;
+			p{
+				font-size: 0.7rem;
+				margin:0;
+			}
+		}
+		.formulario__reservas--width{
+			width:100%;
+		}
+	}
+}

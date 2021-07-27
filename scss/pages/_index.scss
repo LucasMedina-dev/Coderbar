@@ -1,0 +1,80 @@
+#index{
+	background-image: url(../images/index/repeat.jpg);
+	background-size: contain;
+	background-repeat: repeat;
+}
+
+/*Presentacion Index*/
+.articulo{
+	display:flex;
+	width:100%;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	align-content:center;
+	margin-top:100px;
+}
+.historia{
+	display:flex;
+	align-items:center;
+	height:calc(100vh - 100px);
+	.historia__contenedor{
+		align-self:center;
+		background-color:$background-forms;
+		padding:10px 20px 30px 20px; 
+		display:flex;
+		flex-direction:column;
+		flex-wrap:wrap;
+		max-width:400px;
+		min-width:320px;
+		.historia__contenedor--titulo{
+			font-size:2rem;
+			text-align:center;
+			color:#fff;
+			@media all and (max-width: 576px){
+				font-size:1rem;
+			}
+		}
+		.historia__contenedor--separador{
+			margin: auto;
+			width:80%;
+			height:2px;
+			background-color:#000;
+			margin-bottom: 5px;
+		}
+		.historia__contenedor--parrafo{
+			color:#fff;
+			align-self:center;
+			font-size:0.8rem;
+			@media all and (max-width: 576px){
+				font-size:0.8rem;
+			}
+		}
+	}
+}
+
+.promociones{
+	.promociones__informacion{
+		.promociones__informacion--tamaño{
+			width:320px;
+		}
+		.promociones__informacion--centrado{
+			text-align: center;
+			font-size:0.8rem;
+			font-weight:$fuente-bold;
+		}
+	}	
+}
+.horarios{
+	.horarios__informacion{
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+		justify-content:center;
+		.horarios__informacion--centrado{
+			text-align:center;
+		}
+		.horarios__informacion--margin{
+			margin:15px 0 0 0;
+		}
+	}
+}

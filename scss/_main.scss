@@ -78,3 +78,13 @@ $banner:(naranja:rgb(234,99,72), amarillo:rgb(255,204,0), azul:rgb(112,161,214))
 		background-color: #{$rgb};
 	}
 }
+@each $cuerpo in index, reservas, menu, barriles, eventos, galeria, contacto{
+	##{$cuerpo}{
+		overflow:hidden;
+		display:flex;
+		flex-direction:column;
+		height: 100vh;
+		width:100%;
+		backdrop-filter: blur(2px);
+	}
+}

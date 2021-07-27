@@ -1,0 +1,54 @@
+#eventos{
+	background-image:url(../images/eventos/eventos.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+/*Imagenes - Eventos*/
+.eventos{
+	width:28vw;
+	transition:all 0.5s ease-out;
+	border-radius:2%;
+	:focus{
+	 		transform:scale(1.5);
+	 	}
+}
+.modal-body{
+	padding: 0;
+	border:inherit;
+	.texto{
+		position:absolute;
+		top:0;
+		left:18px;
+		font-weight:$fuente-bold;
+		
+	}
+	.datos{
+		position:absolute;
+		margin-top: 5px;
+		top:20px;
+		left:18px;
+		text-align: left;
+		line-height: 20px;
+	}
+	.coder{
+		position:absolute;
+		top: 0px;
+		right: 25px;
+		font-size:1.20rem;
+		font-weight:$fuente-bold;
+	}
+}
+.modal-content{
+	background-color:inherit;
+	border:inherit;	
+}
+.boton{
+	 border-style:none;
+	:hover{
+		transform:scale(1.5);
+	}
+}
+
+button:focus{
+	outline:none;
+}

@@ -1,0 +1,35 @@
+#barriles{
+	background-image:url(../images/barriles/barrilito.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+
+/*Alquiler de barriles*/
+.alquiler{
+	margin:auto 0;
+	background-image:url(../images/barriles/bg.jpg);
+	background-repeat: repeat;
+	text-align: center;
+	padding: 20px;
+	box-shadow: 5px 0px 15px #000;
+	.alquiler__titulo{
+		font-size: 2.5rem ;
+	}
+	.alquiler__descripcion{
+		font-size:1.5rem;
+	}
+	.alquiler__contacto{
+		text-decoration: none;
+		text-decoration:underline;
+		color: #808080;
+	}
+	.alquiler__informacion{
+		display:flex;
+		flex-direction:row;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		.alquiler__informacion--tipos{
+			width:320px;
+		}
+	}	
+}

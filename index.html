@@ -6,6 +6,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="icon/favicon.png">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<title>CoderBar</title>
 	<meta name=description content="Coderbar es un bar de tragos y cerveza artesanal para acompañar nuestras mejores hamburguesas y comidas al mejor precio">
 	<meta name="author" content="CODERBAR">
@@ -14,7 +15,7 @@
 	<meta name="og:description" content="Coderbar es un bar de tragos y cerveza artesanal para acompañar nuestras mejores hamburguesas y comidas al mejor precio">
 	<meta name="keywords" content="bar, restaurant, barato, cerveza, trago, patio, terraza, promociones">
 </head>
-<body id="cuerpo">
+<body id="index">
 	<header class="header">
 		<!-- TITULO -->
 		<div class="header__titulo">
@@ -29,8 +30,8 @@
 		</div>
 	</header>
 	<section id="section">
-		<article>
-		<!-- INICIO HISTORIA -->
+		<article class="articulo">
+			<!-- INICIO Descripcion de Bar-->
 			<div class="historia" id="historia">
 				<div class="historia__contenedor">
 					<h1 class="historia__contenedor--titulo">Bar de tragos y cerveza artesanal</h1>
@@ -38,19 +39,25 @@
 					<h2 class="historia__contenedor--parrafo">Bienvenidos a la web de nuestro bar! En este amigable lugar podés disfrutar los mejores y más exóticos tragos, las mejores variedades de cerveza artesanal al mejor precio, chequea nuestra carta tenemos excelente variedad!</h2>
 				</div>
 			</div>
+			<!-- INICIO Descripcion de Locales -->
+			<div class="historia" id="historia">
+				<div class="historia__contenedor">
+					<h1 class="historia__contenedor--titulo">Encontranos en nuestros locales</h1>
+					<span class="historia__contenedor--separador"></span>
+					<h2 class="historia__contenedor--parrafo">Podés disfrutar en los horarios que encontraras abajo! Tambien podrás organizar una visita a nuestra fabrica, si tenes dudas visita nuestra seccion Fabrica. Podes reservar tu visita en nuestra seccion de reservas</h2>
+				</div>
+			</div>
 		</article>
-		<!-- INICIO PROMOCIONES -->
-		<article>
-			<div class="promociones" id="promociones">
+		<article class="articulo">
+			<!-- INICIO Promociones -->
+			<div class="promociones wow animate__animated animate__fadeIn" id="promociones">
 				<div class="promociones__informacion">
 					<img class="promociones__informacion--tamaño"src="images/index/visa-mastercard.svg" alt="tarjetas">
 					<h3 class="promociones__informacion--centrado">Happy hour todos los días desde las 20h hasta las 23h. <br>Aprovechá en un pago con Visa o Mastercard tenés un descuento del 5% para vos y tus acompañantes!.</h3>
 				</div>
 			</div>
-		</article>
-		<!-- INICIO HORARIOS-->
-		<article>
-			<div class="horarios" id="horarios">
+			<!-- INICIO Horarios -->
+			<div class="horarios wow animate__animated animate__fadeIn" id="horarios">
 				<div class="horarios__informacion">
 					<span class="horarios__informacion--centrado">Nuestros horarios!</span>
 					<span class="horarios__informacion--centrado horarios__informacion--margin">Lunes a Viernes </span>
@@ -62,13 +69,15 @@
 		</article>
 	</section>
 	<footer id="footer">
-		<!-- INICIO NAVEGACION -->
+		<!-- INICIO Navegacion -->
 		<nav class="d-none d-md-block">
 			<div class="navegacion">
 				<ul class="navegacion__ul--center">
 				  	<li class="navegacion__li--transition"><a class="navegacion__link--decoration"href="pages/reservas.html">Reservas</a></li>
 				  	<span class="navegacion__separadores"></span>
 				  	<li class="navegacion__li--transition"><a class="navegacion__link--decoration"href="pages/menu.html">Menú</a></li>
+				  	<span class="navegacion__separadores"></span>
+				  	<li class="navegacion__li--transition"><a class="navegacion__link--decoration"href="pages/barriles.html">Barriles</a></li>
 				  	<span class="navegacion__separadores"></span>
 				    <li class="navegacion__li--transition"><a class="navegacion__link--decoration"href="pages/eventos.html">Eventos</a></li>
 				    <span class="navegacion__separadores"></span>
@@ -78,7 +87,7 @@
 				</ul>
 			</div>	
 		</nav>
-		<!-- INICIO NAVEGACION MOBILE -->
+		<!-- INICIO Navegacion Mobile -->
 		<nav class="navbar-light d-sm-block d-md-none p-1 text-center gradiente-inversa">
 			<button class="navbar-toggler m-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 		  		<span class="navbar-toggler-icon"></span>
@@ -90,6 +99,9 @@
 			    	</li>
 			    	<li class="nav-item">
 			    		<a class="nav-link nav-decoration" href="pages/menu.html">Menu</a>
+			    	</li>
+			    	<li class="nav-item">
+			    		<a class="nav-link nav-decoration" href="pages/barriles.html">Barriles</a>
 			    	</li>
 			    	<li class="nav-item">
 			    		<a class="nav-link nav-decoration" href="pages/eventos.html">Eventos</a>
@@ -106,5 +118,9 @@
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+	<script src="js/wow.js"></script>
+    <script>
+    	new WOW().init();
+    </script>
 </body>
 </html>
