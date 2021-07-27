@@ -193,8 +193,7 @@
   width: 100%;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-content: center;
-  margin-top: 100px; }
+  align-content: center; }
 
 .historia {
   display: flex;
