@@ -29,13 +29,47 @@
 		</div>
 	</header>
 	<section id="section">
-		<div class="cartas ">
-			<!-- CARTA DE CERVEZAS Y TRAGOS-->
-			<div class="cartas__banner cartas__banner--naranja cartas__banner--hidden">
-				<img class="cartas__banner--icono" src="../images/menu/cerveza.svg" alt="cervezas">
-				<p>Podes encontrar aún más opciones visitando nuestro local!</p>
-				<div class="cartas__contenido">
-					<div class="cartas__contenido--producto">
+		<div class="cartas" id="accordionExample">
+			<!-- CERVEZAS - TRAGOS -->
+			<div class="cartas__banner--naranja">
+				<div id="naranja">
+					<button class="cartas__banner--boton collapsed" type="button" data-toggle="collapse" data-target="#cervezas" aria-expanded="true" aria-controls="collapseOne">
+				      	<img class="cartas__banner--icono" src="../images/menu/cerveza.svg" alt="cervezas">
+				    </button>
+				</div>
+				<div id="cervezas" class="collapse" aria-labelledby="naranja" data-parent="#accordionExample">
+					<div class="cartas__contenido">
+						<div>
+						<ul>
+						    <li>ANTARES<p>(Porter, Kolsch, Scotch, Honey, Ipa)</p></li>
+						    <li>GLUCK<p>(Session Ipa, Irish Red, Salvaje)</p></li>
+						    <li>BREW<p>(Dr. Kogoyo, Ananá, Anti Imperial)</p></li>
+						    <li>Kapitän Bier<p>(Dry Stout, Ipa Bohr, Amber ale)</p></li>
+						    <li>CHEVERRY<p>(Blonde, AAA, Hazy Pale)</p></li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+						    <li>MR. MANHATTAN<p>(Whiskey y vermut rojo)</p></li>
+						    <li>GINTONIC<p>(Ginebra y agua tónica)</p></li>
+						    <li>WHISCOLA<p>(Whiskey y coca-cola)</p></li>
+						    <li>FERNANDO<p>(Branca y coca-cola Papá)</p></li>
+						    <li>SEX ON THE BEACH<p>(Vodka, jugo de  naranja y arandanos)</p></li>
+						</ul>
+					</div>
+					</div>
+				</div>
+			</div>
+			<!-- COMIDAS - HAMBURGUESAS -->
+			<div class="cartas__banner--amarillo">
+				<div id="amarillo">
+					<button class="cartas__banner--boton collapsed" type="button" data-toggle="collapse" data-target="#hamburguesas" aria-expanded="true" aria-controls="hamburguesas">
+				      	<img class="cartas__banner--icono" src="../images/menu/hamburguesas.svg" alt="hamburguesas">
+				    </button>
+				</div>
+				<div id="hamburguesas" class="collapse" aria-labelledby="amarillo" data-parent="#accordionExample">
+					<div class="cartas__contenido">
+						<div class="cartas__contenido--producto">
 						<ul>
 						    <li>ANTARES<p>(Porter, Kolsch, Scotch, Honey, Ipa)</p></li>
 						    <li>GLUCK<p>(Session Ipa, Irish Red, Salvaje)</p></li>
@@ -53,56 +87,36 @@
 						    <li>SEX ON THE BEACH<p>(Vodka, jugo de  naranja y arandanos)</p></li>
 						</ul>
 					</div>
-				</div>
-			</div>
-			<!-- CARTA DE COMIDAS-->
-			<div class="cartas__banner cartas__banner--amarillo cartas__banner--hidden">
-				<img class="cartas__banner--icono" src="../images/menu/hamburguesas.svg" alt="comidas">
-				<p>Acompaña tus bebidas! Recordá, podés personalizar tus platos! ;D</p>
-				<div class="cartas__contenido">
-					<div class="cartas__contenido--producto">
-						<ul>
-						    <li>BLOCKBURGUER<p>(Tres carnes, cheddar, cebolla caramelizada)</p></li>
-						    <li>JHONNY BURGOOD<p>(Dos carnes, ajo, palta, huevo y panceta)</p></li>
-						    <li>CANGRE BURGUER<p>(Una carne, lechuga, tomate y salsa secreta)</p></li>
-						    <li>BURGKAT<p>(Dos carnes, cheddar, mostaza y ketchup con cebolla)</p></li>
-						    <li>NOT CHILL BURGUER<p>(Dos carnes, salsa carolina reaper, cebolla y 3 ingredientes)</p></li>
-						</ul>
-					</div>
-					<div class="cartas__contenido--producto">
-						<ul>
-						    <li>SR. PIZZA<p>(Mozzarella, jamon crudo, rucula y huevo)</p></li>
-						    <li>GREEN<p>(Pizza enteramente vegana de jamon y 4 quesos)</p></li>
-						    <li>PEPPERONI<p>(Queso tatemado con rodajas de pepperoni)</p></li>
-						    <li>PAPASNOEL<p>(Papas fritas con paprika y ajo en polvo)</p></li>
-						    <li>PICASSO<p>(Papas fritas con chile, ajo y cebolla en polvo)</p></li>
-						</ul>
 					</div>
 				</div>
 			</div>
-			<!-- CARTA DE POSTRES-->
-			<div class="cartas__banner cartas__banner--azul cartas__banner--hidden">
-				<img class="cartas__banner--icono" src="../images/menu/postres.svg" alt="postres">
-				<p>Para tu café de la tarde o para terminar una excelente noche!</p>
-				<div class="cartas__contenido">
-					<div class="cartas__contenido--producto">
+			<!-- POSTRES - HELADOS - TORTAS -->
+			<div class="cartas__banner--azul">
+				<div id="azul">
+					<button class="cartas__banner--boton collapsed" type="button" data-toggle="collapse" data-target="#postres" aria-expanded="true" aria-controls="postres">
+				      	<img class="cartas__banner--icono" src="../images/menu/postres.svg" alt="postres">
+				    </button>
+				</div>
+				<div id="postres" class="collapse" aria-labelledby="azul" data-parent="#accordionExample">
+					<div class="cartas__contenido">
+						<div class="cartas__contenido--producto">
 						<ul>
-						    <li>FLANSITO<p>(Flan de huevo y caramelo)</p></li>
-						    <li>HELADITO<p>(Sabores a elección)</p></li>
-						    <li>WOK FRUTAL<p>(Wok de frutos de estación en cubos)</p></li>
-						    <li>CHOCOBANANAS<p>(Bananas pisadas con chocolate)</p></li>
-						    <li>CHOCOBUDIN<p>(Budin de chocolate amargo)</p></li>
-
+						    <li>ANTARES<p>(Porter, Kolsch, Scotch, Honey, Ipa)</p></li>
+						    <li>GLUCK<p>(Session Ipa, Irish Red, Salvaje)</p></li>
+						    <li>BREW<p>(Dr. Kogoyo, Ananá, Anti Imperial)</p></li>
+						    <li>Kapitän Bier<p>(Dry Stout, Ipa Bohr, Amber ale)</p></li>
+						    <li>CHEVERRY<p>(Blonde, AAA, Hazy Pale)</p></li>
 						</ul>
 					</div>
 					<div class="cartas__contenido--producto">
 						<ul>
-						    <li>TIRAMISÚ<p>(Vainillas con cafe, chocolate y mascarpone)</p></li>
-						    <li>CHEESECAKE<p>(Torta de queso crema y frutos rojos)</p></li>
-						    <li>BROCHETAS<p>( frutales con chocolate a eleccion)</p></li>
-						    <li>COPABANANA<p>(Copa de banana pisada con mousse de vainilla)</p></li>
-						    <li>MOUSSE ROJO<p>(Vasito de mousse de chocolate y frutilla)</p></li>
+						    <li>MR. MANHATTAN<p>(Whiskey y vermut rojo)</p></li>
+						    <li>GINTONIC<p>(Ginebra y agua tónica)</p></li>
+						    <li>WHISCOLA<p>(Whiskey y coca-cola)</p></li>
+						    <li>FERNANDO<p>(Branca y coca-cola Papá)</p></li>
+						    <li>SEX ON THE BEACH<p>(Vodka, jugo de  naranja y arandanos)</p></li>
 						</ul>
+					</div>
 					</div>
 				</div>
 			</div>

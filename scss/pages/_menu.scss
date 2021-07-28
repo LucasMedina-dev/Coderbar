@@ -8,41 +8,16 @@
 /*Carta de comidas - Menú*/
 .cartas{
 	margin:auto;
-	display:flex;
-	flex-direction:column;
 	width:100%;
-	justify-content:center;
-	.cartas__banner{
-		width:100%;
-		max-height: 50px;
-		color: #fff;
-		transition:max-height 0.5s ease-in-out;
-		transition-delay: 0.3s;
-		&:hover{
-			max-height: 400px;
-		}
+	.cartas__banner--boton{
+	  	border: none;
 	}
 	.cartas__banner--icono{
-		margin-left:0;
-		height: 50px;
 		width:50px;
-	}
-	.cartas__banner--hidden{
-		overflow:hidden;
 	}
 	.cartas__contenido{
 		display:grid;
 		grid-template-columns: repeat(2, 1fr);
-		grid-template-areas:
-		"producto producto";
-		@media all and (max-width:768px){
-			p{
-				font-size: 0.8rem;
-			}
-			li{
-				font-size:0.7rem;
-			}
-		}
 		li{
 			font-family: $fuente-terciaria;
 			font-weight:$fuente-bold;
@@ -56,8 +31,7 @@
 				letter-spacing:0rem;
 			}
 		}
-		.cartas__contenido--producto{
-			grid-area:"producto";
-		}
 	}	
 }
+
+
